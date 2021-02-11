@@ -1,4 +1,6 @@
-# README
+# アプリ概要
+「Bake-up!」は、パン屋洋菓子屋の独立開業を目指す人向けのSNSです。
+カテゴリ別に専門的な情報交換や、モチベーションの向上にご利用いただけます。
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
