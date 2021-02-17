@@ -1,6 +1,5 @@
-require_relative "boot"
-
-require "rails/all"
+require_relative 'boot'
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -12,13 +11,12 @@ module BakeUp
     config.load_defaults 6.1
 
     config.generators do |g|
-     g.test_framework false  # testファイルは生成しない
-     g.test_framework :rspec,
+      g.test_framework false
+      g.test_framework :rspec,
         controller_specs: false,
         view_specs: false,
         helper_specs: false,
         routing_specs: false
-      end
     end
   end
 end
