@@ -1,8 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
+// ミックスイン
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 
+// 全ページ共通
+body {
+  padding-top: 60px;
 }
 
 section {
@@ -13,53 +21,21 @@ textarea {
   resize: vertical;
 }
 
-.home-content {
-  text-align: center;
-  margin-top: 4%;
-  position: relative;
-  p {
-    font-size: 2rem;
-    margin: 10px 0 42px;
-  }
-}
-.top-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin: 23% 0 0 0 ;
-  padding:0;
-  color:#eaeaea
 
-}
-
-#home {
-  background-image: image-url('main-bg.jpg');
-  min-height: 100vh;
-}
-
-// TOP背景画像
-.big-bg {
-  background-size: cover;
-  background-position: center top ;
-  background-repeat: no-repeat;
-}
-
-
-
+// テキストの見栄え
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -94,5 +70,25 @@ footer {
   color: #777 ;
   small {
     float: center;
+  }
+}
+
+#home {
+  background-image: image-url('main-bg.jpg');
+  min-height: 100vh;
+}
+
+// TOP背景画像
+.big-bg {
+  background-size: cover;
+  background-position: center top ;
+  background-repeat: no-repeat;
+}
+
+.top-text {
+  color: #eaeaea;
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
   }
 }
