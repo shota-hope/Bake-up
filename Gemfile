@@ -29,8 +29,8 @@ group :development do
   gem 'web-console', '>= 4.1.0'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
-  gem 'spring'
-  gem 'spring-commands-rspec'
+  # gem 'spring'
+  # gem 'spring-commands-rspec'
   gem 'rubocop'
   gem 'rubocop-rails'
 end
@@ -42,4 +42,3 @@ group :test do
 end
 
 gem 'devise'
-
